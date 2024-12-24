@@ -1,7 +1,11 @@
-import Navbar from "./components/navbar";
+
+import ThemeToggler from "./components/themetoggler";
 
 function App(){
-  return<><Navbar/>
-  <h1>hello smriti and jasika</h1></>
+  return<>
+  
+  <ThemeToggler/>
+  
+  </>
 }
 export default App;

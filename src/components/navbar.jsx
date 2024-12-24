@@ -1,5 +1,33 @@
+import { useState } from 'react';
  function Navbar(){
-    return <><nav className="navbar navbar-expand-lg bg-body-tertiary">
+ const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Inline styles for light and dark themes
+  const lightTheme = {
+    backgroundColor: '#ffffff',
+    color: '#000000',
+    padding: '20px',
+    borderRadius: '5px',
+    textAlign: 'center',
+    transition: 'background-color 0.3s, color 0.3s',
+  
+  };
+
+  const darkTheme = {
+    backgroundColor: '#333333',
+    color: '#ffffff',
+    padding: '20px',
+    borderRadius: '5px',
+    textAlign: 'center',
+    transition: 'background-color 0.3s, color 0.3s',
+  
+  };
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+
+    return <><nav className="navbar navbar-expand-lg bg-body-tertiary"style={isDarkMode ? darkTheme : lightTheme}>
     <div className="container-fluid">
       <a className="navbar-brand" href="#">Navbar</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +60,21 @@
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
+        
       </div>
+      
     </div>
+    <button
+        onClick={toggleTheme}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: isDarkMode ? '#fff' : '#333',
+          color: isDarkMode ? '#333' : '#fff',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+        }}
+      ></button>
   </nav></>
 }
 export default Navbar;
