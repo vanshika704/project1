@@ -1,11 +1,26 @@
 
-import ThemeToggler from "./components/themetoggler";
+// // import ThemeToggler from "./components/themetoggler";
 
-function App(){
-  return<>
+// import Cards from "./pages/cards";
+// import Dashboard from "./pages/dashboard";
+
+import Demo from "./pages/card";
+
+// function App(){
+//   return<>
   
-  <ThemeToggler/>
-  
-  </>
+//   {/* <ThemeToggler/> */}
+//   <Demo/>
+//   </>
+// }
+// export default App;
+
+
+
+export default function App() {
+  return (
+    // <Dashboard/>
+    // <Cards/>
+    <Demo/>
+  )
 }
-export default App;
