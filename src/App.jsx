@@ -1,7 +1,8 @@
 
 // // import ThemeToggler from "./components/themetoggler";
 
-import Easypeasy from "./pages/mappinglists";
+// import Easypeasy from "./pages/mappinglists";
+import Proops from "./pages/props";
 // import Heels from "./pages/mappinglists";
 
 // import Cards from "./pages/cards";
@@ -26,6 +27,7 @@ export default function App() {
     // <Cards/>
     // <Demo/>
     // <Heels/>
-    <Easypeasy/>
+    // <Easypeasy/>
+    <Proops/>
   )
 }
