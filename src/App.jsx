@@ -1,8 +1,13 @@
 
 // // import ThemeToggler from "./components/themetoggler";
 
+import Graph from "./pages/useeffect";
+
+// import UserData from "./pages/useeffect";
+// import Counterapp from "./pages/usestate";
+
 // import Easypeasy from "./pages/mappinglists";
-import Proops from "./pages/props";
+// import Proops from "./pages/props";
 // import Heels from "./pages/mappinglists";
 
 // import Cards from "./pages/cards";
@@ -28,6 +33,9 @@ export default function App() {
     // <Demo/>
     // <Heels/>
     // <Easypeasy/>
-    <Proops/>
+    // <Proops/>
+    // <Counterapp/>
+    // <UserData/>
+    <Graph/>
   )
 }
