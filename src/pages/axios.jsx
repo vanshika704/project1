@@ -13,7 +13,7 @@ const ChartExample = () => {
           datasets: [
             {
               label: "Sales",
-              data: [10, 25, 10, 20, 80],
+              data: [10, 25, 15, 20, 80],
               borderColor: "rgba(75,192,192,1)",
               backgroundColor: "rgba(75,192,192,0.2)",
               fill: true,
