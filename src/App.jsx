@@ -1,7 +1,8 @@
 
 // // import ThemeToggler from "./components/themetoggler";
 
-import Graph from "./pages/useeffect";
+import ChartExample from "./pages/axios";
+// import Graph from "./pages/useeffect";
 
 // import UserData from "./pages/useeffect";
 // import Counterapp from "./pages/usestate";
@@ -36,6 +37,7 @@ export default function App() {
     // <Proops/>
     // <Counterapp/>
     // <UserData/>
-    <Graph/>
+    // <Graph/>
+    <ChartExample/>
   )
 }
