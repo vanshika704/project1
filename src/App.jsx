@@ -2,6 +2,7 @@
 // // import ThemeToggler from "./components/themetoggler";
 
 import ChartExample from "./pages/axios";
+// import ThemeToggleButton from "./pages/themebutton";
 // import Graph from "./pages/useeffect";
 
 // import UserData from "./pages/useeffect";
@@ -39,5 +40,8 @@ export default function App() {
     // <UserData/>
     // <Graph/>
     <ChartExample/>
+    
+    // <ThemeToggleButton/>
   )
 }
+

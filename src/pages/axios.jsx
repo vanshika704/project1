@@ -1,10 +1,10 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import axios from "axios"; // import axios
+import { useEffect, useState } from "react"; // import the hooks 
 
-const ChartExample = () => {
-  const [chartUrl, setChartUrl] = useState("");
+const ChartExample = () => { // arrow function
+  const [chartUrl, setChartUrl] = useState(""); // state to hold chart url
 
-  useEffect(() => {
+  useEffect(() => { //  use effect 
     const fetchChart = async () => {
       const config = {
         type: "line", // Change to "bar" or other chart types as needed
@@ -13,7 +13,7 @@ const ChartExample = () => {
           datasets: [
             {
               label: "Sales",
-              data: [10, 25, 15, 20, 80],
+              data: [10, 25, 15, 20, 30],
               borderColor: "rgba(75,192,192,1)",
               backgroundColor: "rgba(75,192,192,0.2)",
               fill: true,
